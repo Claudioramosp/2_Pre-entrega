@@ -1,0 +1,347 @@
+/* Edicion principal para mis 5 paginas */
+/* Seccion Colores principales de mi sitio web */
+/* Esto es para darle un color central a mis diferentes etiquetas */
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Spectral:wght@300&display=swap');
+
+/* Edicion para todas mis pagina */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Forum', cursive;
+    font-size: 16px;
+}
+/* Edicion de header y nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px black;
+    align-items: center;
+}
+.contenedor {
+    width: 100%;
+    max-width: 90rem;
+   /*  display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'main main main main'
+        'footer footer footer footer'
+     */
+}
+
+.titulo {
+    display: inline;
+    margin-right: 11.4em;
+    font-size: 2.625rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    border: 14.375em;
+}
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    border-radius: 80%;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #147384
+}
+header nav ul li {
+    margin-left: 1.25rem;
+    font-size: 1.625rem;
+    align-items: center;
+    text-align: center;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+main section {
+    width: 100%;
+}
+.menu {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #147384;
+    z-index: 999;
+    opacity: 0.93;
+}
+/* Colores de mi pagina */
+header {
+    background-color: #147384
+}
+
+nav, main {
+    background-color: #44c5de;
+}
+
+article {
+    background-color: #44c5de
+}
+
+footer {
+    background-color: #147384;
+}
+
+
+
+/* Edicion de mi INDEX-Article */
+
+main article section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-inicio {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.875rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.7;
+    border-radius: 10%;
+}
+
+
+.carousel-item {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.mision {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 4.375rem;
+    
+
+}
+.mision__parrafo {
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 1.875rem;
+}
+.boton__u {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left: 36.25em;
+}
+.card-title {
+    text-align: center;
+    font-size: 26px;
+}
+.card-img-top {
+    width: 28em;
+    height: 28em;
+}
+.titulo__C, .mision {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    font-weight: bold;
+}
+.card {
+    margin-left: 10px;
+    
+}
+.menu__mobile {
+    display: none;
+    background-color: #147384;
+}
+
+/* Edicion de mi 2°Pagina "Servicios" */
+
+.titulo-s {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.servicios {
+    display: flex;
+    font-size: 24px;
+    padding-left: 30px;
+} 
+
+.servicio {
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    width: 80% ;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.pservicio {
+    display: flex;
+    width: 280px;
+    height: 250px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Edicion para pagina "Productos" */
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items:center;
+}
+
+.imagenp {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.imagenp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.tituloP {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Edicion de Blog */
+
+.tituloB {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.titulo__blog {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.text__consejos {
+    font-size: 22px;
+    text-align: left;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.img_blog1 {
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    width: 900px;
+    height: 300px;
+}
+
+/* Edicion de Contacto */
+
+.tituloC {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Termino de ediciones principales para mis 5 paginas */
+
+
+/* Seccion de Index */
+/* Imagenes  del index*/
+/* Esto es para darle el tamaño y la posicion en la pagina a mis imagenes */
+
+
+
+/* Edicion de Footer */
+footer{
+    text-align: center; /* Para centrar mi footer en su bloque */
+}
+
+.contacto {
+    text-align: center; /* Para centra mi contacto al centro de su bloque */
+}
+.mapa {
+    text-align: left; /* Para centrar mi mapa al centro de su bloque */
+}
+
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .menu {
+        flex-direction: column;
+    }
+    .nav__index {
+        display: none;
+    }
+    .menu__mobile {
+        display: grid;
+    }
+}
