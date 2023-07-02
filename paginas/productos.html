@@ -24,11 +24,12 @@
             <img src="../imagenes/PhotoIndex/Logo2.jpg" alt="Logo del sitio" class="logo">
         </div>  
         <div>
-            <h1 class="titulo">Pet-Solutions</h1>
+            <a href="../index.html" class="home">
+                <h1 class="titulo">Pet-Solutions</h1>
+            </a>
         </div>
             <!-- Menu -->
-            <div>
-                <nav>
+                <nav class="nav__index">
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./servicios.html">Servicios</a></li>
@@ -37,7 +38,48 @@
                         <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
-            </div>
+        <!-- Menu Responsive -->
+        <div class="menu__mobile">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../imagenes/PhotoIndex/Logo2.jpg" alt="Logo del sitio" class="logo">
+                    <a class="navbar-brand" href="../index.html">Pet-Solutions</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+
     </header>
         
     <!-- Seccion Productos de mi pagina -->
