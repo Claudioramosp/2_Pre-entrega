@@ -53,7 +53,7 @@ header {
     text-align: end;
     justify-content: flex-end;
     margin-left: auto;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 .navbar-brand {
     padding-right: 43%;
@@ -104,6 +104,17 @@ main section {
     width: 100%;
     background-color: #147384;
     z-index: 999;
+}
+
+.offcanvas-header{
+    background-color: #147384;
+}
+.offcanvas-body{
+    background-color:#44c5de;
+}
+.offcanvas-title{
+    font-size: 26px;
+    font-weight: bold;
 }
 
 /* Colores de mi pagina */
@@ -232,7 +243,9 @@ main article section {
     font-size: 24px;
     padding-left: 30px;
 } 
-
+.servicio h4 {
+    font-weight: bold;
+}
 .servicio {
     margin: 20px;
     width: 300px;
@@ -360,27 +373,83 @@ main article section {
     font-weight: bold;
 }
 
-/* Termino de ediciones principales para mis 5 paginas */
-
-
-/* Seccion de Index */
-/* Imagenes  del index*/
-/* Esto es para darle el tamaño y la posicion en la pagina a mis imagenes */
-
-
 
 /* Edicion de Footer */
 footer{
-    text-align: center; /* Para centrar mi footer en su bloque */
+    width: 100%;
+    justify-content: center;
+}
+.footer__container {
+    display: flex;
+    margin: auto;
+    padding: 40px;
+    justify-content: space-between;
+}
+.columna1__footer,
+.columna2__footer,
+.columna3__footer {
+    width: 33%;
+    font-weight: 900;
 }
 
-.contacto {
-    text-align: center; /* Para centra mi contacto al centro de su bloque */
+.columna1__footer h2, 
+.columna2__footer h2, 
+.columna3__footer h2 {
+    font-size: 28px;
 }
-.mapa {
-    text-align: left; /* Para centrar mi mapa al centro de su bloque */
+.columna1__footer p {
+    font-size: 18px;
+    margin-top: 20px;
 }
-
+.row1,
+.row2 {
+    display: flex;
+    margin-top: 10px;
+}
+.row1 img,
+.row2 img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+.row1 label,
+.row2 label {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.row1 label:hover,
+.row2 label:hover {
+    color: gray;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+.footer__copyright {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: auto;
+}
+.copyright {
+    padding-left: 10px;
+}
+.politica {
+    padding-right: 10px;
+}
+.politica a {
+    text-decoration: none;
+    color: white;
+}
+.copyright label {
+    font-weight: bold;
+}
+.politica a:hover{
+    color: gray;
+    transition: color 0.3s ease-in-out;
+}
 
 /* Vista Tablet */
 @media (min-width: 577px) and (max-width: 875px) {
@@ -414,6 +483,10 @@ footer{
         padding: 10px;
         opacity: 0.7;
         border-radius: 10%;
+}
+.footer__container,
+.footer__copyright{
+    flex-wrap: wrap;
 }
 }
 
@@ -461,15 +534,15 @@ footer{
         font-size: 24px;
     }
 
-    .tituloB {
-        text-align: center;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        text-align: center;
-        font-size: 32px;
-        letter-spacing: 1px;
-        font-weight: bold;
-    }
+.tituloB {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+        -weight: bold;
+}
     .tituloB {
         text-align: center;
         padding-bottom: 20px;
@@ -491,8 +564,16 @@ footer{
         width: 900px;
         height: 300px;
     }
-
-
-
-
+.footer__container,
+.footer__copyright {
+    flex-wrap: wrap;
+}
+.columna1__footer,
+.columna2__footer,
+.columna3__footer {
+    margin: 30px;
+}
+.politica{
+    padding-left: 12px;
+}
 }
