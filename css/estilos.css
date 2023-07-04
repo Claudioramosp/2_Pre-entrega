@@ -19,7 +19,6 @@ header {
     padding: 10px 20px;
     box-shadow: 0 0 10px black;
 }
-
 .titulo, .logo {
     display: flex;
     align-items: left;
@@ -96,7 +95,6 @@ main section {
     z-index: 999;
     opacity: 0.93;
 }
-
 .menu__mobile {
     display: flex;
     position: sticky;
@@ -105,7 +103,6 @@ main section {
     background-color: #147384;
     z-index: 999;
 }
-
 .offcanvas-header{
     background-color: #147384;
 }
@@ -141,8 +138,6 @@ footer {
     background-color:#147384 ;
 }
 
-
-
 /* Edicion de mi INDEX-Article */
 
 main article section {
@@ -151,13 +146,11 @@ main article section {
     text-align: center;
     
 }
-
 .index {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .texto-inicio {
     position: absolute;
@@ -173,22 +166,17 @@ main article section {
     opacity: 0.7;
     border-radius: 10%;
 }
-
-
 .carousel-item {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
-
 .mision {
     font-size: 2em;
     text-align: center;
     letter-spacing: 1px;
     padding-top: 10px;
-    
-
 }
 .mision__parrafo {
     font-size: 1.5em;
@@ -237,7 +225,6 @@ main article section {
     padding-top: 20px;
     font-weight: bold;
 }
-
 .servicios {
     display: flex;
     font-size: 24px;
@@ -280,6 +267,7 @@ main article section {
     justify-items: center;
     align-content: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .producto {
@@ -453,36 +441,36 @@ footer{
 
 /* Vista Tablet */
 @media (min-width: 577px) and (max-width: 875px) {
-    .titulo {
-        font-size: 24px;
-        text-align: left;
-        padding-top: 20px;
-    }
-    .logo {
-        height: 4rem;
-        width: 4rem;
-        justify-content: first baseline;
-    }
-    header nav ul li {
-        display: inline;
-        margin-left: 1.28rem;
-        font-size: 20px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: -1px;
-    }
-    .texto-inicio {
-        position: absolute;
-        top: 25%;
-        left: 28%;
-        transform: translate(-50%, -50%);
-        color: black;
-        font-size: 20px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 10px;
-        opacity: 0.7;
-        border-radius: 10%;
+.titulo {
+    font-size: 24px;
+    text-align: left;
+    padding-top: 20px;
+}
+.logo {
+    height: 4rem;
+    width: 4rem;
+    justify-content: first baseline;
+}
+header nav ul li {
+    display: inline;
+    margin-left: 1.28rem;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1px;
+}
+.texto-inicio {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    opacity: 0.7;
+    border-radius: 10%;
 }
 .footer__container,
 .footer__copyright{
@@ -493,46 +481,50 @@ footer{
 
 /* MOBILE */
 @media (max-width: 576px) {
-    .menu {
-        flex-direction: column;
-    }
-    .nav__index, .menu__index,.titulo {
-        display: none;
-    }
-    .menu__mobile {
-        display: grid;
-        position: sticky;
-        top: 20px;
-        background-color: #147384;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        width: 100%;
-        justify-items: center;
-        align-content: center;
-        justify-content: center;
+.menu {
+    flex-direction: column;
 }
-    .nav__index, .logo__titulo {
-        display: none;
-    }
-    .texto-inicio {
+.nav__index, .menu__index,.titulo {
+    display: none;
+}
+.menu__mobile {
+    display: grid;
+    position: sticky;
+    top: 20px;
+    background-color: #147384;
+}
+.navbar-brand {
+    padding-right: unset;
+    padding-left: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.nav__index, .logo__titulo {
+    display: none;
+}
+.texto-inicio {
     position: absolute;
     top: 30%;
     left: 25%;
     transform: translate(-50%, -50%);
     color: black;
-    font-size: 16px;
+    font-size: 12px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
     opacity: 0.7;
     border-radius: 10%;
-    }
-    .tituloS,.tituloC,.tituloB,.tituloP {
-        font-size: 24px;
-    }
+    padding: 0, 0, 0, 20px;
+}
+.tituloS,.tituloC,.tituloB,.tituloP {
+    font-size: 24px;
+}
 
 .tituloB {
     text-align: center;
@@ -541,29 +533,29 @@ footer{
     text-align: center;
     font-size: 32px;
     letter-spacing: 1px;
-        -weight: bold;
+    -weight: bold;
 }
-    .tituloB {
-        text-align: center;
-        padding-bottom: 20px;
-        font-size: 26px;
-        letter-spacing: 1px;
-        font-weight: bold;
-        padding-top: 10px;
-    }
-    .text__consejos {
-        font-size: 22px;
-        text-align: left;
-        padding-right: 40px;
-        padding-top: 10px;
-    }
-    .img_blog1 {
-        display: flex;
-        padding-left: 100px;
-        padding-bottom: 30px;
-        width: 900px;
-        height: 300px;
-    }
+.tituloB {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.text__consejos {
+    font-size: 22px;
+    text-align: left;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.img_blog1 {
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    width: 900px;
+    height: 300px;
+}
 .footer__container,
 .footer__copyright {
     flex-wrap: wrap;
@@ -576,4 +568,31 @@ footer{
 .politica{
     padding-left: 12px;
 }
+/* Edicion de Seccion SERVICIOS */
+.servicios {
+    display: block;
+    padding: 30px, 10px;
+}
+.pservicio {
+    margin: auto;
+}
+
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 410px) {
+    .texto-inicio {
+        right: 30%;
+        font-size: 10px;
+    }
+    .texto-inicio p {
+        margin: 0;
+    }
 }
