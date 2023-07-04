@@ -190,9 +190,8 @@ main article section {
     background-color: #44c5de;
     color: #147384;
 }
-.btn btn-secondary btn-lg {
+.btn__personalizado {
     background-color: #147384;
-    color: #147384;
 }
 .card-img-top {
     width: 100%;
@@ -439,6 +438,65 @@ footer{
     transition: color 0.3s ease-in-out;
 }
 
+/* Edicion de Footer */
+
+form {
+    margin-top: 20px;
+}
+
+.nombre__contacto,
+.correo__contacto,
+.mensaje__contacto,
+.boton__contacto {
+    margin-bottom: 20px;
+}
+
+.nombre__contacto label,
+.correo__contacto label,
+.mensaje__contacto label {
+    display: block;
+    font-weight: bold;
+}
+
+.nombre__contacto input,
+.correo__contacto input,
+.mensaje__contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton__contacto {
+    display: flex;
+    justify-content: center;
+}
+.boton__contacto button {
+    background-color: #147384;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.contacto {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloC {
+    margin-bottom: 20px;
+}
+
+.mapa {
+    margin: 20px;
+}
 /* Vista Tablet */
 @media (min-width: 577px) and (max-width: 875px) {
 .titulo {
@@ -501,7 +559,8 @@ header nav ul li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: 100%;
+    width: 80%;
+    margin: auto;
     justify-items: center;
     align-content: center;
     justify-content: center;
