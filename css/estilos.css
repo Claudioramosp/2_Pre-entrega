@@ -1,8 +1,13 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Spectral:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
 /* Edicion principal para mis 5 paginas */
 /* Seccion Colores principales de mi sitio web */
 /* Esto es para darle un color central a mis diferentes etiquetas */
-@import url("https://fonts.googleapis.com/css2?family=Forum&family=Spectral:wght@300&display=swap");
 /* Edicion para todas mis pagina */
 * {
   padding: 0;
@@ -10,24 +15,29 @@
   box-sizing: border-box;
 }
 
-body header {
+body {
+  font-family: "Forum", cursive;
+  font-size: 16px;
+}
+
+/* Edicion de header y nav */
+header {
   display: flex;
   padding: 10px 20px;
   box-shadow: 0 0 10px black;
 }
-body header .menu {
-  align-self: start;
+
+.titulo, .logo {
+  display: flex;
+  align-items: left;
 }
-body header .titulo {
+
+.titulo {
   margin: 0;
   font-size: 2.625em;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 900;
   padding: 15px 10px;
-}
-body header .titulo, body header .logo {
-  display: flex;
-  align-items: left;
 }
 
 .home {
@@ -85,7 +95,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: gray;
-  font-weight: 700;
+  font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
 
@@ -553,18 +563,18 @@ form {
     text-align: center;
     letter-spacing: -1px;
   }
-  .texto-inicio {
-    position: absolute;
-    top: 25%;
-    left: 28%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-    opacity: 0.7;
-    border-radius: 10%;
+.texto-inicio {
+  position: absolute;
+  top: 25%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  opacity: 0.7;
+  border-radius: 10%;
   }
   .footer__container,
   .footer__copyright {
@@ -573,102 +583,111 @@ form {
 }
 /* MOBILE */
 @media (max-width: 576px) {
-  .menu {
-    flex-direction: column;
-  }
-  .nav__index, .menu__index, .titulo {
-    display: none;
-  }
-  .menu__mobile {
-    display: grid;
-    position: sticky;
-    top: 20px;
-    background-color: #147384;
-  }
-  .navbar-brand {
-    padding-right: unset;
-    padding-left: 10px;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    width: 80%;
-    margin: auto;
-    justify-items: center;
-    align-content: center;
-    justify-content: center;
-  }
-  .nav__index, .logo__titulo {
-    display: none;
-  }
-  .texto-inicio {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 12px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0.7;
-    border-radius: 10%;
-    padding: 0, 0, 0, 20px;
-  }
-  .tituloS, .tituloC, .tituloB, .tituloP {
-    font-size: 24px;
-  }
-  .tituloB {
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 26px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    padding-top: 10px;
-  }
-  .text__consejos {
-    font-size: 22px;
-    text-align: left;
-    padding-right: 40px;
-    padding-top: 10px;
-  }
-  .img_blog1 {
-    display: flex;
-    padding-left: 100px;
-    padding-bottom: 30px;
-    width: 900px;
-    height: 300px;
-  }
-  .footer__container,
-  .footer__copyright {
-    flex-wrap: wrap;
-  }
-  .columna1__footer,
-  .columna2__footer,
-  .columna3__footer {
-    margin: 30px;
-  }
-  .politica {
-    padding-left: 12px;
-  }
-  /* Edicion de Seccion SERVICIOS */
-  .servicios {
-    display: block;
-    padding: 30px, 10px;
-  }
-  .pservicio {
-    margin: auto;
-  }
+.menu {
+  flex-direction: column;
+}
+.nav__index, .menu__index, .titulo {
+  display: none;
+}
+.menu__mobile {
+  display: grid;
+  position: sticky;
+  top: 20px;
+  background-color: #147384;
+}
+.navbar-brand {
+  padding-right: unset;
+  padding-left: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 80%;
+  margin: auto;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.nav__index, .logo__titulo {
+  display: none;
+}
+.texto-inicio {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+  border-radius: 10%;
+  padding: 0, 0, 0, 20px;
+}
+.tituloS, .tituloC, .tituloB, .tituloP {
+  font-size: 24px;
+}
+.tituloB {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1px;
+  -weight: bold;
+}
+.tituloB {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.text__consejos {
+  font-size: 22px;
+  text-align: left;
+  padding-right: 40px;
+  padding-top: 10px;
+}
+.img_blog1 {
+  display: flex;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  width: 900px;
+  height: 300px;
+}
+.footer__container,
+.footer__copyright {
+  flex-wrap: wrap;
+}
+.columna1__footer,
+.columna2__footer,
+.columna3__footer {
+  margin: 30px;
+}
+.politica {
+  padding-left: 12px;
+}
+/* Edicion de Seccion SERVICIOS */
+.servicios {
+  display: block;
+  padding: 30px, 10px;
+}
+.pservicio {
+  margin: auto;
+}
 }
 /* Mobile XS */
 @media (max-width: 410px) {
-  .texto-inicio {
-    right: 30%;
-    font-size: 10px;
-  }
-  .texto-inicio p {
-    margin: 0;
-  }
+.texto-inicio {
+  right: 30%;
+  font-size: 10px;
+}
+.texto-inicio p {
+  margin: 0;
+}
 }
 
-/*# sourceMappingURL=estilos.css.map */
+
